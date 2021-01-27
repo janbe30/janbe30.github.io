@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Janeth Betancourt | Front-End Developer and UX/UI Designer</title>
-        <link rel="stylesheet" type="text/css" href=""/>
-        <script src=""></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     </head>
     <body>
         <header>
@@ -13,148 +15,158 @@
             <!-- menu -->
         </header>
         <main>
-            <section id="intro">
-                <h1>Janeth Betancourt</h1>
-                <h2>Front-end Developer and UX/UI Designer in Austin, Tx.</h2>
-                <p>Hey there! My name is Janeth.</p>
-                <p>I’m a front-end web developer and UX/UI designer in Austin, Tx. I enjoy crafting functional and delightful web experiences for all. </p>
+            <section id="intro" class="section">
+                <div class="container">
+                    <h1>Janeth Betancourt</h1>
+                    <h2>Front-end Developer and UX/UI Designer in Austin, Tx.</h2>
+                    <p>Hey there! My name is Janeth.</p>
+                    <p>I’m a front-end web developer and UX/UI designer in Austin, Tx. I enjoy crafting functional and delightful web experiences for all. </p>
+                </div>
             </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>
-                        <h3>Development</h3>
-                        <p>HTML, CSS, Javascript, jQuery, TypeScript, React, MySQL, Java, C and C++</p>
-                    </li>
-                    <li>
-                        <h3>Design</h3>
-                        <p>UI/UX Design, Wireframes & mock ups, Prototyping</p>
-                    </li>
-                    <li>
-                        <h3>Research</h3>
-                        <p>User Interviews, Surveys, Usability testing, A/B Testing, Analytics</p>
-                    </li>
-                    <li>
-                        <h3>Toolbox</h3>
-                        <p>Adobe Photoshop, Illustrator, Axure, Figma, Bootstrap, SharePoint Framework, NodeJS, Gulp and Git/Github</p>
-                    </li>
-                </ul>
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>
+                            <h3>Development</h3>
+                            <p>HTML, CSS, Javascript, jQuery, TypeScript, React, MySQL, Java, C and C++</p>
+                        </li>
+                        <li>
+                            <h3>Design</h3>
+                            <p>UI/UX Design, Wireframes & mock ups, Prototyping</p>
+                        </li>
+                        <li>
+                            <h3>Research</h3>
+                            <p>User Interviews, Surveys, Usability testing, A/B Testing, Analytics</p>
+                        </li>
+                        <li>
+                            <h3>Toolbox</h3>
+                            <p>Adobe Photoshop, Illustrator, Axure, Figma, Bootstrap, SharePoint Framework, NodeJS, Gulp and Git/Github</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="portfolio">
+            <section id="portfolio" class="section">
                 <!-- Grids using screenshot as the bg image 
                      For all internal work, display pop-up window including problem statement (scenario), solution and final product.
                 -->
-                <h2>My Work</h2>
-                <section class="work-grid">
-                    <div>
-                        <figure>
-                            <img src="images/thumbnails/onboarding-intake.png" alt="Equipment and Access request form screenshot" />
-                            <figcaption>Intake system for Onboarding</figcaption>
-                        </figure>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images/thumbnails/editor-review-tools.png" alt="Content Editor and Review tools" />
-                            <figcaption>Content Editor and Review tools</figcaption>
-                        </figure>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images/thumbnails/onboarding-checklist.png" alt="Interactive Onboarding Checklist" />
-                            <figcaption>Interactive Onboarding Checklist</figcaption>
-                        </figure>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images/thumbnails/onboarding-intake.png" alt="2018-19 Corporate Annual Well-being Report" />
-                            <figcaption>2018-19 Corporate Annual Well-being Report</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <ul class="work-container">
-                    <li>
-                        <h4>Intake system for Onboarding requests</h4>
+                <div class="container">
+                    <h2>My Work</h2>
+                    <section class="work-grid" class="section">
                         <div>
-                            <p><strong>Problem statement:</strong> The Onboarding team needed a new way to manage equipment and access requests for new hires, as one of the company's main platforms - SharePoint - was being upgraded and the current method would no longer be compatible.</p>
-                            <p><strong>Solution:</strong> Intake system to manage these requests leveraging different features of the new platform. I had the opportunity to learn a couple of new technologies along the way, such as the SharePoint Framework and TypeScript, and used them to create the current system which is used by hundreds of hiring managers.</p>
-                            <p><strong>Skills used:</strong></p>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>Sass</li>
-                                <li>TypeScript</li>
-                                <li>SharePoint Framework</li>
-                                <li>Gulp</li>
-                            </ul>
-                            <!-- Link or image of the final product-->
+                            <figure>
+                                <img src="images/thumbnails/onboarding-intake.png" alt="Equipment and Access request form screenshot" />
+                                <figcaption>Intake system for Onboarding</figcaption>
+                            </figure>
                         </div>
-                    </li>
-                    <li>
-                        <h4>Content Editor and Review tools</h4>
                         <div>
-                            <p><strong>Problem statement:</strong> The teams responsible for the daily publishing of the intranet news site needed some additional tools to review the content and create the markup for the articles quickly. </p>
-                            <p><strong>Solution:</strong> Two simple interactive tools to simplify the process for the teams involved. The content review tool ensures the content meets established guidelines and the content editor tool facilitates the creation of articles for both tech-savvy and non-tech savvy users alike.</p>
-                            <p><strong>Skills used:</strong></p>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <!-- Link or image of the final product-->
+                            <figure>
+                                <img src="images/thumbnails/editor-review-tools.png" alt="Content Editor and Review tools" />
+                                <figcaption>Content Editor and Review tools</figcaption>
+                            </figure>
                         </div>
-                    </li>
-                    <li>
-                        <h4>Interactive Onboarding Checklist</h4>
                         <div>
-                            <p><strong>Problem statement:</strong> There was a need for provide new hires additional guidance and the ability to keep track of main tasks to complete during their first month with the company.</p>
-                            <p><strong>Solution:</strong> Interactive checklist allows users to check tasks off as they complete them. It's responsive and very simple to use. The interactive checklist can be accessed from any internal device; if the user logs in from an external device then a static version of the checklist is displayed. </p>
-                            <p><strong>Skills used:</strong></p>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                                <li>LAMP</li>
-                                <li>UX Research: Usability study and user interviews. Prototype testing.</li>
-                            </ul>
-                            <!-- Link or image of the final product-->
+                            <figure>
+                                <img src="images/thumbnails/onboarding-checklist.png" alt="Interactive Onboarding Checklist" />
+                                <figcaption>Interactive Onboarding Checklist</figcaption>
+                            </figure>
                         </div>
-                    </li>
-                    <li>
-                        <h4>2018-19 Corporate Annual Well-being Report</h4>
                         <div>
-                            <p><strong>Problem statement:</strong> The client was seeking to reimagine the annual well-being report - a web-based, interactive report showcasing the company's well-being philoshophy through rich data and personal video stories from several employees.</p>
-                            <p><strong>Solution:</strong> A fresh, dynamic and mobile-first experience perfectly captured the strides made by the company delighting users along the way. The report was released publicly for the first time in seven years. </p>
-                            <p><strong>Skills used:</strong></p>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>UX Research: Usability study.</li>
-                            </ul>
-                            <p><a href="https://wellbeing.humana.com/2018/index.html">See the external version of the report</a></p>
-                            <!-- Link or image of the final product-->
+                            <figure>
+                                <img src="images/thumbnails/onboarding-intake.png" alt="2018-19 Corporate Annual Well-being Report" />
+                                <figcaption>2018-19 Corporate Annual Well-being Report</figcaption>
+                            </figure>
                         </div>
-                    </li>
-                    <li>
-                        <h4>Custom internal sites (Internal only)</h4>
-                        <div>
-                            <p><strong>Problem statement: Welcome Center and Working Better Together</strong></p>
-                            <p><strong>Solution:</strong></p>
-                            <!-- Link or image of the final product-->
-                        </div>
-                    </li>
-                </ul>
+                    </section>
+                    <ul class="work-container">
+                        <li>
+                            <h4>Intake system for Onboarding requests</h4>
+                            <div>
+                                <p><strong>Problem statement:</strong> The Onboarding team needed a new way to manage equipment and access requests for new hires, as one of the company's main platforms - SharePoint - was being upgraded and the current method would no longer be compatible.</p>
+                                <p><strong>Solution:</strong> Intake system to manage these requests leveraging different features of the new platform. I had the opportunity to learn a couple of new technologies along the way, such as the SharePoint Framework and TypeScript, and used them to create the current system which is used by hundreds of hiring managers.</p>
+                                <p><strong>Skills used:</strong></p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>Sass</li>
+                                    <li>TypeScript</li>
+                                    <li>SharePoint Framework</li>
+                                    <li>Gulp</li>
+                                </ul>
+                                <!-- Link or image of the final product-->
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Content Editor and Review tools</h4>
+                            <div>
+                                <p><strong>Problem statement:</strong> The teams responsible for the daily publishing of the intranet news site needed some additional tools to review the content and create the markup for the articles quickly. </p>
+                                <p><strong>Solution:</strong> Two simple interactive tools to simplify the process for the teams involved. The content review tool ensures the content meets established guidelines and the content editor tool facilitates the creation of articles for both tech-savvy and non-tech savvy users alike.</p>
+                                <p><strong>Skills used:</strong></p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <!-- Link or image of the final product-->
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Interactive Onboarding Checklist</h4>
+                            <div>
+                                <p><strong>Problem statement:</strong> There was a need for provide new hires additional guidance and the ability to keep track of main tasks to complete during their first month with the company.</p>
+                                <p><strong>Solution:</strong> Interactive checklist allows users to check tasks off as they complete them. It's responsive and very simple to use. The interactive checklist can be accessed from any internal device; if the user logs in from an external device then a static version of the checklist is displayed. </p>
+                                <p><strong>Skills used:</strong></p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>LAMP</li>
+                                    <li>UX Research: Usability study and user interviews. Prototype testing.</li>
+                                </ul>
+                                <!-- Link or image of the final product-->
+                            </div>
+                        </li>
+                        <li>
+                            <h4>2018-19 Corporate Annual Well-being Report</h4>
+                            <div>
+                                <p><strong>Problem statement:</strong> The client was seeking to reimagine the annual well-being report - a web-based, interactive report showcasing the company's well-being philoshophy through rich data and personal video stories from several employees.</p>
+                                <p><strong>Solution:</strong> A fresh, dynamic and mobile-first experience perfectly captured the strides made by the company delighting users along the way. The report was released publicly for the first time in seven years. </p>
+                                <p><strong>Skills used:</strong></p>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                    <li>UX Research: Usability study.</li>
+                                </ul>
+                                <p><a href="https://wellbeing.humana.com/2018/index.html">See the external version of the report</a></p>
+                                <!-- Link or image of the final product-->
+                            </div>
+                        </li>
+                        <li>
+                            <h4>Custom internal sites (Internal only)</h4>
+                            <div>
+                                <p><strong>Problem statement: Welcome Center and Working Better Together</strong></p>
+                                <p><strong>Solution:</strong></p>
+                                <!-- Link or image of the final product-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <p>I'm a Senior Software Engineer at <a href="https://humana.com">Humana</a>. I'm part of a small digital team within HR - we design, build and maintain associate-facing websites and applications with the ultimate goal of improving the associate experience. </p>
-                <p>For more details about this position or previous work experience, please visit my <a href="https://linkedin.com/in/janbe30" target="_blank">LinkedIn</a>.</p>
+            <section id="experience" class="section">
+                <div class="container">
+                    <h2>Experience</h2>
+                    <p>I'm a Senior Software Engineer at <a href="https://humana.com">Humana</a>. I'm part of a small digital team within HR - we design, build and maintain associate-facing websites and applications with the ultimate goal of improving the associate experience. </p>
+                    <p>For more details about this position or previous work experience, please visit my <a href="https://linkedin.com/in/janbe30" target="_blank">LinkedIn</a>.</p>
+                </div>
             </section>
-            <section id="about">
-                <h2>About</h2>
-                <p>I have been in tech in one way or another, for about 13 years. From desktop support to software engineer. But my love for computers and technology goes way back to my childhood years. I guess you could say it all started in 1998 when I got my first computer - an Acer desktop with Windows 1998 and dial-up connection. Yup, I’ve always been a computer nerd 8-)</p>
-                <p>I’m originally from Mexico. Juarez, Chihuahua to be exact. I went to college in Las Cruces, New Mexico and moved to Louisville, KY after graduating where I landed my first “real” job. After living there for two years, my girlfriend (now wife) and I decided to move to a warmer climate and landed in Austin, Tx., where we live with our two pups, Tobey and Tilley.</p>
-                <p>When not building web things, I enjoy spending time with my partner and dogs, our friends and family. Some of my favorite things are traveling, hiking, watching movies, reading and discovering new places to eat.</p>
+            <section id="about" class="section">
+                <div class="container">
+                    <h2>About</h2>
+                    <p>I have been in tech in one way or another, for about 13 years. From desktop support to software engineer. But my love for computers and technology goes way back to my childhood years. I guess you could say it all started in 1998 when I got my first computer - an Acer desktop with Windows 1998 and dial-up connection. Yup, I’ve always been a computer nerd 8-)</p>
+                    <p>I’m originally from Mexico. Juarez, Chihuahua to be exact. I went to college in Las Cruces, New Mexico and moved to Louisville, KY after graduating where I landed my first “real” job. After living there for two years, my girlfriend (now wife) and I decided to move to a warmer climate and landed in Austin, Tx., where we live with our two pups, Tobey and Tilley.</p>
+                    <p>When not building web things, I enjoy spending time with my partner and dogs, our friends and family. Some of my favorite things are traveling, hiking, watching movies, reading and discovering new places to eat.</p>
+                </div>
             </section>
         </main>
         <footer>
