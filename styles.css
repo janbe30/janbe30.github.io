@@ -10,8 +10,8 @@ header {
 
 /* ====== LOGOS + IMAGES ===== */
 .main-logo {
-  width: 4.5rem !important;
-  margin: 1em;
+  width: 2.5rem !important;
+  max-height: 2.5rem !important;
 }
 
 /* ====== GRID ===== */
