@@ -1,6 +1,15 @@
 $primary-color: #283747;
 $accent-color: #3c1874;
 
+/* ====== GENERAL ===== */
 body {
   color: $primary-color;
 }
+
+/* ====== LOGOS + IMAGES ===== */
+.main-logo {
+  width: 4.5rem;
+  margin: 1em;
+}
+
+/* ====== GRID ===== */
