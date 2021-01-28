@@ -1,5 +1,19 @@
+/* ====== GENERAL ===== */
 body {
   color: #283747;
 }
+
+/* ====== HEADER ===== */
+header {
+  padding: 0.5em 1.5em;
+}
+
+/* ====== LOGOS + IMAGES ===== */
+.main-logo {
+  width: 4.5rem !important;
+  margin: 1em;
+}
+
+/* ====== GRID ===== */
 
 /*# sourceMappingURL=styles.css.map */
