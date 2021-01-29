@@ -3,6 +3,14 @@ body {
   color: #283747;
 }
 
+main {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ====== INTRO ===== */
 section#intro {
   height: 100vh;
@@ -27,6 +35,7 @@ section#intro .intro-wrapper {
   margin-top: -7em;
   border-left: 8px solid #3c1874;
   padding-left: 1em;
+  font-size: 1.1rem;
 }
 
 /* ====== HEADER ===== */
