@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const modalBtns = document.querySelectorAll(".modal-button");
 const modals = document.querySelectorAll("modal");
 
-function openModal() {
+function toggleModal() {
   console.log("open modal!");
   let modalTarget = this.dataset.target;
   let modalElem = document.getElementById(modalTarget);
@@ -35,13 +35,10 @@ function openModal() {
   modalElem.classList.add("is-active");
   console.log(modalElem);
   let closeBtn = modalElem.querySelector("button.delete");
-  closeBtn.addEventListener("click", closeModal);
+  closeBtn.addEventListener("click", () => {
+    console.log("close modal");
+    modalElem.classList.remove("is-active");
+  });
 }
 
-function closeModal(modal) {
-  console.log(`close modal`);
-  console.log(this);
-  //   modal.classList.remove("is-active");
-}
-
-modalBtns.forEach((btn) => btn.addEventListener("click", openModal));
+modalBtns.forEach((btn) => btn.addEventListener("click", toggleModal));
