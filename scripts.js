@@ -22,3 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Modal functionality
+const modalBtns = document.querySelectorAll(".modal-button");
+const modals = document.querySelectorAll("modal");
+
+function openModal() {
+  console.log("open modal!");
+  console.log(this);
+}
+
+modalBtns.forEach((btn) => btn.addEventListener("click", openModal));
