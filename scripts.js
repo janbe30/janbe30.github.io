@@ -39,9 +39,9 @@ function openModal() {
 }
 
 function closeModal(modal) {
-  console.log(`close modal ${modal}`);
+  console.log(`close modal`);
   console.log(this);
-  modal.classList.remove("is-active");
+  //   modal.classList.remove("is-active");
 }
 
 modalBtns.forEach((btn) => btn.addEventListener("click", openModal));
