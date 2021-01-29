@@ -3,6 +3,13 @@ body {
   color: #283747;
 }
 
+section#intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ====== HEADER ===== */
 header {
   padding: 0.5em 1.5em;
