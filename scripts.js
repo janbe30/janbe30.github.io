@@ -29,8 +29,11 @@ const modals = document.querySelectorAll("modal");
 
 function openModal() {
   console.log("open modal!");
-  let modalToOpen = this.dataset.target;
-  document.getElementById(modalToOpen).classList.add("is-active");
+  let modalTarget = this.dataset.target;
+  let modalElem = document.getElementById(modalTarget);
+
+  modalElem.classList.add("is-active");
+  console.log(modalElem);
 }
 
 modalBtns.forEach((btn) => btn.addEventListener("click", openModal));
