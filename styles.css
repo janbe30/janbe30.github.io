@@ -3,11 +3,30 @@ body {
   color: #283747;
 }
 
+/* ====== INTRO ===== */
 section#intro {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section#intro .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section#intro .title-wrapper {
+  text-align: right;
+}
+section#intro .title-wrapper h2 {
+  max-width: 65%;
+  float: right;
+}
+section#intro .intro-wrapper {
+  max-width: 71%;
+  margin-top: -7em;
+  border-left: 8px solid #3c1874;
+  padding-left: 1em;
 }
 
 /* ====== HEADER ===== */

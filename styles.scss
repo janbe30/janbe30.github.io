@@ -6,11 +6,34 @@ body {
   color: $primary-color;
 }
 
+/* ====== INTRO ===== */
 section#intro {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .title-wrapper {
+    text-align: right;
+
+    h2 {
+      max-width: 65%;
+      float: right;
+    }
+  }
+
+  .intro-wrapper {
+    max-width: 71%;
+    margin-top: -7em;
+    border-left: 8px solid $accent-color;
+    padding-left: 1em;
+  }
 }
 
 /* ====== HEADER ===== */
