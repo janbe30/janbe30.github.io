@@ -34,6 +34,12 @@ function openModal() {
 
   modalElem.classList.add("is-active");
   console.log(modalElem);
+  let closeBtn = modalElem.querySelector("button.delete");
+  closeBtn.addEventListener("click", closeModal);
+}
+
+function closeModal() {
+  console.log("close modal");
 }
 
 modalBtns.forEach((btn) => btn.addEventListener("click", openModal));
