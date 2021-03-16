@@ -24,21 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Modal functionality
+// NEED: Ability to close modal when clicking outside of modal
 const modalBtns = document.querySelectorAll(".modal-button");
 const modals = document.querySelectorAll("modal");
 
 function toggleModal() {
-  console.log("open modal!");
   let modalTarget = this.dataset.target;
   let modalElem = document.getElementById(modalTarget);
   let htmlElem = document.querySelector("html");
 
   modalElem.classList.add("is-active");
   htmlElem.classList.add("is-clipped");
-  console.log(modalElem);
   let closeBtn = modalElem.querySelector("button.delete");
   closeBtn.addEventListener("click", () => {
-    console.log("close modal");
     modalElem.classList.remove("is-active");
     htmlElem.classList.remove("is-clipped");
   });
