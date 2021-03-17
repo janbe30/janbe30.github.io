@@ -12,7 +12,7 @@ main {
 }
 
 /* ====== INTRO ===== */
-section#intro {
+section#landing {
   height: 100vh;
   display: flex;
   padding: 1em 3em;
@@ -20,19 +20,19 @@ section#intro {
   background: #3c1874;
   color: #fff;
 }
-section#intro .container {
+section#landing .container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-section#intro .title-wrapper {
+section#landing .title-wrapper {
   text-align: right;
 }
-section#intro .title-wrapper h2 {
+section#landing .title-wrapper h2 {
   max-width: 65%;
   float: right;
 }
-section#intro .intro-wrapper {
+section#landing .intro-wrapper {
   max-width: 71%;
   margin-top: -7em;
   border-left: 8px solid #3c1874;
