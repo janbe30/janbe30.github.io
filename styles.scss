@@ -6,6 +6,7 @@ $white: #fff;
 /* ====== GENERAL ===== */
 body {
   color: $primary-color;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 main {
@@ -16,7 +17,7 @@ main {
   align-items: center;
 }
 
-/* ====== INTRO ===== */
+/* ====== LANDING PAGE ===== */
 section#landing {
   height: 100vh;
   display: flex;
@@ -28,17 +29,14 @@ section#landing {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
-  .title-wrapper {
-    text-align: right;
-
-    h2 {
-      max-width: 65%;
-      float: right;
-    }
+  h1, h2 {
+    color: $white;
+    font-family: 'Englebert', sans-serif;
   }
+  
 
   .intro-wrapper {
     max-width: 71%;

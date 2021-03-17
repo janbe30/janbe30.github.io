@@ -1,6 +1,7 @@
 /* ====== GENERAL ===== */
 body {
   color: #283747;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 main {
@@ -11,7 +12,7 @@ main {
   align-items: center;
 }
 
-/* ====== INTRO ===== */
+/* ====== LANDING PAGE ===== */
 section#landing {
   height: 100vh;
   display: flex;
@@ -23,14 +24,11 @@ section#landing {
 section#landing .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-section#landing .title-wrapper {
-  text-align: right;
-}
-section#landing .title-wrapper h2 {
-  max-width: 65%;
-  float: right;
+section#landing h1, section#landing h2 {
+  color: #fff;
+  font-family: "Englebert", sans-serif;
 }
 section#landing .intro-wrapper {
   max-width: 71%;
