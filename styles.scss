@@ -19,7 +19,7 @@ main {
 
 /* ====== LANDING PAGE ===== */
 section#landing {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   padding: 1em 3em;
   justify-content: center;
@@ -41,6 +41,17 @@ section#landing {
   h3 {
     color: $white;
     font-size: 1.5rem;
+  }
+
+  .jump-link {
+    position: fixed;
+    bottom: 1em;
+
+    a {
+      color: #fff;
+    }
+
+    // Hover/focus styles?
   }
 
   .intro-wrapper {

@@ -14,7 +14,7 @@ main {
 
 /* ====== LANDING PAGE ===== */
 section#landing {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   padding: 1em 3em;
   justify-content: center;
@@ -34,6 +34,13 @@ section#landing h1 {
 section#landing h3 {
   color: #fff;
   font-size: 1.5rem;
+}
+section#landing .jump-link {
+  position: fixed;
+  bottom: 1em;
+}
+section#landing .jump-link a {
+  color: #fff;
 }
 section#landing .intro-wrapper {
   max-width: 71%;
