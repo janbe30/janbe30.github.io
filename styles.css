@@ -26,9 +26,12 @@ section#landing .container {
   flex-direction: column;
   justify-content: center;
 }
-section#landing h1, section#landing h2 {
+section#landing h1 {
   color: #fff;
   font-family: "Englebert", sans-serif;
+}
+section#landing h3 {
+  color: #fff;
 }
 section#landing .intro-wrapper {
   max-width: 71%;
