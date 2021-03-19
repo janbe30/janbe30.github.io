@@ -6,9 +6,10 @@
         <title>Janeth Betancourt | Front-End Developer and UX/UI Designer</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Englebert&family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Englebert&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     </head>
     <body>
         <header>
@@ -64,13 +65,14 @@
                 <div class="container">
                     <h1 class="title is-1">Janeth Betancourt</h1>
                     <h3 class="subtitle is-3">Front-end Developer and UX/UI Designer</h3>
-                    <p class="jump-link"><a href="#skills">Hey there!<br/>
+                    <p class="jump-link"><a href="#intro">Hey there!<br/>
                         <i class="fas fa-chevron-down"></i></a></p>
                 </div>
             </section>
             <section id="intro" class="section">
                 <div class="container">
-                    <p>Hey there! My name is Janeth.</p>
+                    <img src="images/profile-pic.jpg" alt="Janeth posing with tree in Maine" class="rounded-img">
+                    <p><strong>Hi! I'm Janeth.</strong></p>
                     <p>I’m a front-end web developer and UX/UI designer in Austin, Tx. I enjoy crafting functional and delightful web experiences for all. </p>
                     
                 </div>
@@ -80,20 +82,40 @@
                     <h2 class="title is-2">Skills</h2>
                     <ul>
                         <li>
-                            <h4 class="title is-4">Development</h4>
-                            <p>HTML, CSS, Javascript, jQuery, TypeScript, React, MySQL, Java, C and C++</p>
+                            <div class="icon-wrapper">
+                                <span class="iconify icon-sq" data-icon="ant-design:code-filled"></span>
+                            </div> 
+                            <div class="skill-content">
+                                <h4 class="title is-4">Development</h4>
+                                <p>HTML, CSS, Javascript, jQuery, TypeScript, React, MySQL, Java, C and C++</p>
+                            </div>
                         </li>
                         <li>
-                            <h4 class="title is-4">Design</h4>
-                            <p>UI/UX Design, Wireframes & mock ups, Prototyping</p>
+                            <div class="icon-wrapper">
+                                <span class="iconify icon-sq" data-icon="ph:note-pencil-fill"></span>
+                            </div>
+                            <div class="skill-content">
+                                <h4 class="title is-4">Design</h4>
+                                <p>UI/UX Design, Wireframes & mock ups, Prototyping</p>
+                            </div>
                         </li>
                         <li>
-                            <h4 class="title is-4">Research</h4>
-                            <p>User Interviews, Surveys, Usability testing, A/B Testing, Analytics</p>
+                            <div class="icon-wrapper">
+                                <span class="iconify icon-sq" data-icon="ant-design:area-chart-outlined"></span>
+                            </div>
+                            <div class="skill-content">
+                                <h4 class="title is-4">Research</h4>
+                                <p>User Interviews, Surveys, Usability testing, A/B Testing, Analytics</p>
+                            </div>
                         </li>
                         <li>
-                            <h4 class="title is-4">Toolbox</h4>
-                            <p>Adobe Photoshop, Illustrator, Axure, Figma, Bootstrap, SharePoint Framework, NodeJS, Gulp and Git/Github</p>
+                            <div class="icon-wrapper">
+                                <span class="iconify icon-sq" data-icon="fluent:window-dev-tools-20-filled"></span>
+                            </div>
+                            <div class="skill-content">
+                                <h4 class="title is-4">Toolbox</h4>
+                                <p>Adobe Photoshop, Illustrator, Axure, Figma, Bootstrap, SharePoint Framework, NodeJS, Gulp and Git/Github</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -120,10 +142,9 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <!-- add link with button-->
                                         Intake system to manage equipment and access requests for new hires in SharePoint Online.
                                         <br>
-                                        <button class="button is-link is-primary modal-button" data-target="onboarding-intake-modal" aria-haspopup="true">See more</button>
+                                        <button class="button is-text modal-button" data-target="onboarding-intake-modal" aria-haspopup="true">See more</button>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +164,7 @@
                                     <div class="content">
                                         Interactive tools to review and build content for news articles.
                                         <br>
-                                        <button class="button is-link is-primary modal-button" data-target="content-tools-modal" aria-haspopup="true">See more</button>
+                                        <button class="button is-text modal-button" data-target="content-tools-modal" aria-haspopup="true">See more</button>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +186,7 @@
                                     <div class="content">
                                         Interactive checklist to help new hires keep track of main tasks to complete during their first month.
                                         <br>
-                                        <button class="button is-link is-primary modal-button" data-target="onboarding-checklist-modal" aria-haspopup="true">See more</button>
+                                        <button class="button is-text modal-button" data-target="onboarding-checklist-modal" aria-haspopup="true">See more</button>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +206,7 @@
                                     <div class="content">
                                         Dynamic, mobile-first web-based report showcasing the company's well-being philosophy.
                                         <br>
-                                        <button class="button is-link is-primary modal-button" data-target="web-report-modal" aria-haspopup="true">See more</button>
+                                        <button class="button is-text modal-button" data-target="web-report-modal" aria-haspopup="true">See more</button>
                                     </div>
                                 </div>
                             </div>

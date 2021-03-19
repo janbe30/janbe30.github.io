@@ -12,6 +12,26 @@ main {
   align-items: center;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Englebert", sans-serif;
+}
+
+a {
+  text-decoration: underline solid;
+  font-weight: 600;
+  color: inherit;
+}
+a:hover, a:focus {
+  text-decoration: underline dotted;
+  color: inherit;
+}
+
+/* ====== HEADER ===== */
+header {
+  padding: 0.5em 1.5em;
+}
+
 /* ====== LANDING PAGE ===== */
 section#landing {
   height: 85vh;
@@ -25,7 +45,6 @@ section#landing .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 15%;
 }
 section#landing h1 {
   color: #fff;
@@ -36,11 +55,17 @@ section#landing h3 {
   font-size: 1.5rem;
 }
 section#landing .jump-link {
-  position: fixed;
-  bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 5em;
+  margin-left: -2.5em;
 }
 section#landing .jump-link a {
   color: #fff;
+}
+section#landing .jump-link svg {
+  margin-left: 2em;
 }
 section#landing .intro-wrapper {
   max-width: 71%;
@@ -49,15 +74,105 @@ section#landing .intro-wrapper {
   padding-left: 1em;
 }
 
-/* ====== HEADER ===== */
-header {
-  padding: 0.5em 1.5em;
+/* ====== INTRO ===== */
+section#intro {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+section#intro .container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== SKILLS + EXPERIENCE + FOOTER ===== */
+section#skills,
+section#experience,
+footer {
+  background: #3c1874;
+  color: #fff;
+}
+section#skills h2, section#skills h4,
+section#experience h2,
+section#experience h4,
+footer h2,
+footer h4 {
+  color: #fff;
+}
+
+/* ====== SKILLS ======= */
+section#skills ul {
+  margin-top: 2.5em;
+}
+section#skills ul h4 {
+  margin-bottom: 0.25em;
+  font-size: 1.3rem;
+}
+section#skills ul li {
+  display: flex;
+  align-items: center;
+  margin: 1em auto 1.75em;
+}
+section#skills svg.iconify {
+  font-size: 3.5rem;
+  line-height: 1em;
+  margin-right: 0.25em;
+}
+
+/* ====== PORTFOLIO + ABOUT ===== */
+section#portfolio h2,
+section#about h2 {
+  color: #3c1874;
+}
+
+/* ====== PORTFOLIO ===== */
+section#portfolio .card-header {
+  background: #3c1874;
+}
+section#portfolio .card-header .card-header-title {
+  color: #fff;
+}
+section#portfolio .card-content {
+  border-top: 1px solid #F3F3F3;
+}
+section#portfolio .card-content .button.is-text {
+  color: #3c1874;
+  float: right;
+  padding-bottom: 1.5em;
+  padding-right: 0;
+}
+section#portfolio .image.is-4by3 {
+  padding-top: 70%;
+}
+
+/* ====== FOOTER ===== */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3.5em 2em 3em;
+  margin-top: 2.5em;
+}
+footer span.icon {
+  margin: 0.5em;
+}
+footer span.icon svg {
+  font-size: 2em;
 }
 
 /* ====== LOGOS + IMAGES ===== */
 .main-logo {
   width: 4rem !important;
   max-height: 4rem !important;
+}
+
+.rounded-img {
+  width: 13em;
+  border-radius: 100%;
+  margin: 1em auto 2em;
 }
 
 /* ====== GRID ===== */

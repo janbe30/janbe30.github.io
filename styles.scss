@@ -17,6 +17,27 @@ main {
   align-items: center;
 }
 
+h2 {
+  text-align: center;
+  font-family: 'Englebert', sans-serif;
+}
+
+a {
+  text-decoration: underline solid;
+  font-weight: 600;
+  color: inherit;
+  &:hover, &:focus{
+    text-decoration: underline dotted;
+    color: inherit;
+  }
+}
+
+
+/* ====== HEADER ===== */
+header {
+  padding: 0.5em 1.5em;
+}
+
 /* ====== LANDING PAGE ===== */
 section#landing {
   height: 85vh;
@@ -30,7 +51,7 @@ section#landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15%;
+    // margin-left: 15%;
   }
 
   h1 {
@@ -44,14 +65,20 @@ section#landing {
   }
 
   .jump-link {
-    position: fixed;
-    bottom: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 5em;
+    margin-left: -2.5em;
 
     a {
       color: #fff;
     }
 
     // Hover/focus styles?
+    svg {
+      margin-left: 2em;
+    }
   }
 
   .intro-wrapper {
@@ -62,10 +89,105 @@ section#landing {
   }
 }
 
-/* ====== HEADER ===== */
-header {
-  padding: 0.5em 1.5em;
+/* ====== INTRO ===== */
+section#intro {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
+
+/* ===== SKILLS + EXPERIENCE + FOOTER ===== */
+section#skills, 
+section#experience,
+footer {
+  background: $accent-color;
+  color: $white;
+
+  h2, h4 {
+    color: $white;
+  }
+}
+
+/* ====== SKILLS ======= */ 
+section#skills {
+  ul {
+    margin-top: 2.5em;
+    h4 {
+      margin-bottom: 0.25em;
+      font-size: 1.3rem;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin: 1em auto 1.75em;
+    }
+  }
+  svg.iconify {
+    font-size: 3.5rem;
+    line-height: 1em;
+    margin-right: 0.25em;
+  }
+}
+
+/* ====== PORTFOLIO + ABOUT ===== */
+section#portfolio, 
+section#about {
+  h2 {
+    color: $accent-color;
+  }
+}
+
+/* ====== PORTFOLIO ===== */
+section#portfolio {
+  .card-header {
+    background: $accent-color;
+  
+    .card-header-title {
+      color: $white;
+    }
+  }
+  .card-content {
+    border-top: 1px solid $off-white;
+
+    .button.is-text{
+      color: $accent-color;
+      float: right;
+      padding-bottom: 1.5em;
+      padding-right: 0;
+    }
+  }
+  .image.is-4by3 {
+    padding-top: 70%;
+  }
+  
+}
+
+/* ====== FOOTER ===== */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3.5em 2em 3em;
+  margin-top: 2.5em;
+
+  span.icon {
+    margin: 0.5em;
+    
+    svg {
+      font-size: 2em;  
+    }
+  }
+}
+
+
 
 /* ====== LOGOS + IMAGES ===== */
 .main-logo {
@@ -73,5 +195,17 @@ header {
   max-height: 4rem !important;
   //   margin: 1em;
 }
+
+.rounded-img {
+  width: 13em;
+  border-radius: 100%;
+  margin: 1em auto 2em;
+}
+
+.icon-sq {
+  // width: 48px;
+  // height: 48px;
+}
+
 
 /* ====== GRID ===== */
