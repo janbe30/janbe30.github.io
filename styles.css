@@ -1,3 +1,4 @@
+/* Breakpoints */
 /* ====== GENERAL ===== */
 body {
   color: #283747;
@@ -17,14 +18,53 @@ h2 {
   font-family: "Englebert", sans-serif;
 }
 
-a {
+p:not(.jump-link) a,
+.icon a {
   text-decoration: underline solid;
   font-weight: 600;
   color: inherit;
 }
-a:hover, a:focus {
+p:not(.jump-link) a:hover, p:not(.jump-link) a:focus,
+.icon a:hover,
+.icon a:focus {
   text-decoration: underline dotted;
   color: inherit;
+}
+
+@media (min-width: 768px) {
+  .container:not(.is-max-desktop) {
+    max-width: 768px;
+  }
+}
+
+/* ====== LOGOS + IMAGES ===== */
+.main-logo {
+  width: 4rem !important;
+  max-height: 4rem !important;
+}
+
+div.social span.icon {
+  margin: 0.5em;
+}
+div.social span.icon svg {
+  font-size: 2em;
+}
+
+.rounded-img {
+  width: 13em;
+  border-radius: 100%;
+  margin: 1em auto 2em;
+}
+
+.wave-container {
+  position: absolute;
+  background: #3c1874;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+}
+.wave-container svg {
+  display: block;
 }
 
 /* ====== HEADER ===== */
@@ -40,6 +80,8 @@ section#landing {
   justify-content: center;
   background: #3c1874;
   color: #fff;
+  width: 100%;
+  position: relative;
 }
 section#landing .container {
   display: flex;
@@ -58,8 +100,8 @@ section#landing .jump-link {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 5em;
   margin-left: -2.5em;
+  z-index: 1000;
 }
 section#landing .jump-link a {
   color: #fff;
@@ -73,19 +115,55 @@ section#landing .intro-wrapper {
   border-left: 8px solid #3c1874;
   padding-left: 1em;
 }
+section#landing .wave-container {
+  bottom: -3em;
+}
+@media (min-width: 768px) {
+  section#landing .wave-container {
+    bottom: -11em;
+  }
+}
+@media (min-width: 1200px) {
+  section#landing .wave-container {
+    bottom: -16em;
+  }
+}
 
 /* ====== INTRO ===== */
 section#intro {
   min-height: 90vh;
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
+  width: 100%;
+  position: relative;
 }
 section#intro .container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 25%;
   align-items: center;
   text-align: center;
+}
+@media (min-width: 768px) {
+  section#intro .container {
+    margin-top: 18%;
+  }
+}
+@media (min-width: 1200px) {
+  section#intro .container {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 768px) {
+  section#intro p {
+    font-size: 1.2em;
+  }
+}
+section#intro .wave-container {
+  background: #fff;
+  bottom: -5.5em;
 }
 
 /* ===== SKILLS + EXPERIENCE + FOOTER ===== */
@@ -94,6 +172,7 @@ section#experience,
 footer {
   background: #3c1874;
   color: #fff;
+  width: 100%;
 }
 section#skills h2, section#skills h4,
 section#experience h2,
@@ -104,6 +183,9 @@ footer h4 {
 }
 
 /* ====== SKILLS ======= */
+section#skills {
+  position: relative;
+}
 section#skills ul {
   margin-top: 2.5em;
 }
@@ -121,14 +203,60 @@ section#skills svg.iconify {
   line-height: 1em;
   margin-right: 0.25em;
 }
+section#skills .wave-container {
+  bottom: -4.5em;
+}
+@media (min-width: 768px) {
+  section#skills .wave-container {
+    bottom: -17em;
+  }
+}
+@media (min-width: 1200px) {
+  section#skills .wave-container {
+    bottom: -26em;
+  }
+}
+@media (min-width: 768px) {
+  section#skills {
+    margin-bottom: 8em;
+  }
+}
+@media (min-width: 1200px) {
+  section#skills {
+    margin-bottom: 15em;
+  }
+}
 
 /* ====== PORTFOLIO + ABOUT ===== */
+section#portfolio,
+section#about {
+  position: relative;
+}
 section#portfolio h2,
 section#about h2 {
   color: #3c1874;
+  margin-top: 1em;
 }
 
 /* ====== PORTFOLIO ===== */
+section#portfolio {
+  margin-bottom: 5em;
+  width: 100%;
+}
+section#portfolio .wave-container {
+  background: #fff;
+  bottom: -6.8em;
+}
+@media (min-width: 768px) {
+  section#portfolio .wave-container {
+    bottom: -18em;
+  }
+}
+@media (min-width: 1200px) {
+  section#portfolio .wave-container {
+    bottom: -28em;
+  }
+}
 section#portfolio .card-header {
   background: #3c1874;
 }
@@ -147,34 +275,98 @@ section#portfolio .card-content .button.is-text {
 section#portfolio .image.is-4by3 {
   padding-top: 70%;
 }
+@media (min-width: 768px) {
+  section#portfolio {
+    margin-bottom: 10em;
+  }
+}
+@media (min-width: 1200px) {
+  section#portfolio {
+    margin-bottom: 15em;
+  }
+}
+
+/* ====== EXPERIENCE ===== */
+section#experience {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  position: relative;
+}
+section#experience .wave-container {
+  bottom: -4.5em;
+}
+@media (min-width: 768px) {
+  section#experience .wave-container {
+    bottom: -17em;
+  }
+}
+@media (min-width: 1200px) {
+  section#experience .wave-container {
+    bottom: -26em;
+  }
+}
+
+@media (min-width: 768px) {
+  section#about {
+    margin-top: 8em;
+  }
+}
+@media (min-width: 1200px) {
+  section#about {
+    margin-top: 15em;
+    margin-bottom: 3em;
+  }
+}
 
 /* ====== FOOTER ===== */
 footer {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   text-align: center;
   padding: 3.5em 2em 3em;
   margin-top: 2.5em;
 }
-footer span.icon {
-  margin: 0.5em;
+footer div.block {
+  margin-top: 2em;
 }
-footer span.icon svg {
-  font-size: 2em;
+footer p {
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-/* ====== LOGOS + IMAGES ===== */
-.main-logo {
-  width: 4rem !important;
-  max-height: 4rem !important;
-}
-
-.rounded-img {
-  width: 13em;
-  border-radius: 100%;
-  margin: 1em auto 2em;
+footer p img {
+  width: 6em;
+  margin: 0 0.25em;
 }
 
-/* ====== GRID ===== */
+/* ====== WORK GRID ===== */
+@media (min-width: 768px) {
+  .card {
+    min-height: 30.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+}
+
+.modal-card-title {
+  font-size: 1.3rem;
+  max-width: 90%;
+  line-height: 1.25em;
+}
+@media (min-width: 768px) {
+  .modal-card-title {
+    font-size: 1.4rem;
+    line-height: 1;
+    max-width: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

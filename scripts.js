@@ -40,6 +40,17 @@ function toggleModal() {
     modalElem.classList.remove("is-active");
     htmlElem.classList.remove("is-clipped");
   });
+  document.addEventListener('click', e => {
+    if(e.target.classList.contains('modal-background')){
+      modalElem.classList.remove("is-active");
+      htmlElem.classList.remove("is-clipped");
+    }
+  });
 }
 
 modalBtns.forEach((btn) => btn.addEventListener("click", toggleModal));
+
+
+// Fills current year in footer
+let yearDiv = document.querySelector('#current-year');
+yearDiv.innerHTML = new Date().getFullYear();
