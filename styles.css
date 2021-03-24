@@ -37,6 +37,12 @@ p:not(.jump-link) a:hover, p:not(.jump-link) a:focus,
   }
 }
 
+@media (min-width: 1200px) {
+  .container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 925px;
+  }
+}
+
 /* ====== LOGOS + IMAGES ===== */
 .main-logo {
   width: 4rem !important;
@@ -213,20 +219,15 @@ section#skills .wave-container {
 }
 @media (min-width: 1200px) {
   section#skills .wave-container {
-    bottom: -26em;
+    bottom: -18em;
   }
 }
 @media (min-width: 768px) {
   section#skills {
     margin-bottom: 8em;
+    min-height: 30em;
   }
 }
-@media (min-width: 1200px) {
-  section#skills {
-    margin-bottom: 15em;
-  }
-}
-
 /* ====== PORTFOLIO + ABOUT ===== */
 section#portfolio,
 section#about {
@@ -303,7 +304,12 @@ section#experience .wave-container {
 }
 @media (min-width: 1200px) {
   section#experience .wave-container {
-    bottom: -26em;
+    bottom: -12em;
+  }
+}
+@media (min-width: 1200px) {
+  section#experience {
+    min-height: 25em;
   }
 }
 
@@ -314,7 +320,7 @@ section#experience .wave-container {
 }
 @media (min-width: 1200px) {
   section#about {
-    margin-top: 15em;
+    margin-top: 5em;
     margin-bottom: 3em;
   }
 }

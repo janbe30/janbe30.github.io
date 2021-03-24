@@ -51,8 +51,14 @@ p:not(.jump-link) a,
   @include breakpoint(med-screen){
     max-width: 768px;
   }
-  
 }
+
+.container:not(.is-max-desktop):not(.is-max-widescreen){
+  @include breakpoint(lg-screen){
+    max-width:925px;
+  }
+}
+
 
 /* ====== LOGOS + IMAGES ===== */
 .main-logo {
@@ -235,14 +241,15 @@ section#skills {
       bottom: -17em;
     }
     @include breakpoint(lg-screen) {
-      bottom: -26em;
+      bottom: -18em;
     }
   }
   @include breakpoint(med-screen) {
     margin-bottom: 8em;
+    min-height: 30em;
   }
   @include breakpoint(lg-screen) {
-    margin-bottom: 15em;
+    // margin-bottom: 15em;
   }
 }
 
@@ -313,8 +320,11 @@ section#experience {
       bottom: -17em;
     }
     @include breakpoint(lg-screen) {
-      bottom: -26em;
+      bottom: -12em;
     }
+  }
+  @include breakpoint(lg-screen){
+    min-height: 25em;
   }
 }
 
@@ -323,7 +333,7 @@ section#about {
     margin-top: 8em;
   }
   @include breakpoint(lg-screen){
-    margin-top: 15em;
+    margin-top: 5em;
     margin-bottom: 3em;
   }
 }
