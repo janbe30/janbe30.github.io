@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Check out my personal website/portfolio: [janbe30.github.io/home.html](https://janbe30.github.io/home.html)
+
 <!--
 **janbe30/janbe30** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
