@@ -61,6 +61,11 @@ div.social span.icon svg {
   border-radius: 100%;
   margin: 1em auto 2em;
 }
+@media (min-width: 768px) {
+  .rounded-img {
+    width: 16em;
+  }
+}
 
 .wave-container {
   position: absolute;
@@ -162,9 +167,13 @@ section#intro .container {
     margin-top: 10%;
   }
 }
+section#intro p:first-of-type {
+  font-size: 1.5em;
+}
 @media (min-width: 768px) {
   section#intro p {
     font-size: 1.2em;
+    line-height: 1.75em;
   }
 }
 section#intro .wave-container {
@@ -198,6 +207,17 @@ section#skills ul {
 section#skills ul h4 {
   margin-bottom: 0.25em;
   font-size: 1.3rem;
+  position: relative;
+}
+section#skills ul h4:before {
+  content: "";
+  width: 2.2em;
+  height: 5px;
+  position: absolute;
+  top: -0.35em;
+  left: -5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
 }
 section#skills ul li {
   display: flex;
@@ -357,7 +377,7 @@ footer p img {
 }
 @media (min-width: 1200px) {
   .card {
-    max-width: 65%;
+    max-width: 80%;
     margin: 0 auto;
   }
 }

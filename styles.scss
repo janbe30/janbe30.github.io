@@ -81,6 +81,9 @@ div.social {
   width: 13em;
   border-radius: 100%;
   margin: 1em auto 2em;
+  @include breakpoint(med-screen){
+    width: 16em;
+  }
 }
 
 .wave-container {
@@ -190,8 +193,12 @@ section#intro {
   }
 
   p {
+    &:first-of-type {
+      font-size:1.5em;
+    }
     @include breakpoint(med-screen){
       font-size: 1.2em;
+      line-height: 1.75em;
     }
   }
 
@@ -222,6 +229,17 @@ section#skills {
     h4 {
       margin-bottom: 0.25em;
       font-size: 1.3rem;
+      position: relative;
+      &:before {
+        content: '';
+        width: 2.2em;
+        height: 5px;
+        position: absolute;
+        top: -0.35em;
+        left: -5px;
+        background: rgba($white, 0.3);
+        border-radius: 2px;
+      }
     }
     li {
       display: flex;
@@ -372,7 +390,7 @@ footer {
     min-height: 30.5em;
   }
   @include breakpoint(lg-screen) {
-    max-width: 65%;
+    max-width: 80%;
     margin: 0 auto;
   }
 }
