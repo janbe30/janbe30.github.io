@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Modal functionality
-// NEED: Ability to close modal when clicking outside of modal
 const modalBtns = document.querySelectorAll(".modal-button");
 const modals = document.querySelectorAll("modal");
 

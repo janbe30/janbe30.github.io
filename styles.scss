@@ -2,6 +2,10 @@ $primary-color: #283747;
 $accent-color: #3c1874;
 $off-white: #F3F3F3;
 $white: #fff;
+// Dark Mode colors
+$dark-bg: #1c2631;
+$dark-accent: #a880e5;
+
 
 /* Breakpoints */
 @mixin breakpoint($point) {
@@ -309,8 +313,8 @@ section#portfolio {
     .button.is-text{
       color: $accent-color;
       float: right;
-      padding-bottom: 1.5em;
-      padding-right: 0;
+      // padding-bottom: 1.5em;
+      margin-right: 0;
     }
   }
   .image.is-4by3 {
@@ -403,5 +407,85 @@ footer {
     font-size: 1.4rem;
     line-height: 1;
     max-width: 100%;
+  }
+}
+
+
+/* ====== DARK MODE THEME ===== */
+body.dark {
+  background: $dark-bg;
+  color: $off-white;
+
+  .wave-container { display: none; }
+  header {
+    background: $primary-color;
+    .navbar { background-color: $primary-color; }
+    .navbar-item { 
+      color: $dark-accent; 
+    
+      &:hover, 
+      :focus {
+        background-color: #a880e5;
+        color: #fff;
+        border-radius: 2px;
+      }
+    }
+    
+  }
+
+  h1, h2, h3:not(.subtitle), h4 {
+    color: $dark-accent !important;
+  }
+
+  strong { color: $white; }
+
+  section {
+    background-color: $dark-bg !important;
+  }
+
+  section#landing {
+    h3 { color: $off-white; }
+    .jump-link a {
+      color: #a880e5;
+    }
+  }
+
+  section#portfolio {
+    .card, 
+    .card-header, 
+    .card-content { 
+      background-color: $primary-color; 
+    }
+    .card-content {
+      color: $off-white;
+     .button.is-text {
+      color: $dark-accent;
+        &:active,
+        &:focus {
+          background-color:$dark-accent;
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .modal-card-head {
+    background-color: $primary-color;
+  }
+
+  .modal-card-title {
+    color: $dark-accent;
+  }
+
+  .modal-card-body {
+    background-color: $dark-bg;
+  }
+
+  .content h4{
+    color: $white;
+  }
+
+  footer { 
+    background: $primary-color;
   }
 }

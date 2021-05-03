@@ -290,8 +290,7 @@ section#portfolio .card-content {
 section#portfolio .card-content .button.is-text {
   color: #3c1874;
   float: right;
-  padding-bottom: 1.5em;
-  padding-right: 0;
+  margin-right: 0;
 }
 section#portfolio .image.is-4by3 {
   padding-top: 70%;
@@ -393,6 +392,75 @@ footer p img {
     line-height: 1;
     max-width: 100%;
   }
+}
+
+/* ====== DARK MODE THEME ===== */
+body.dark {
+  background: #1c2631;
+  color: #F3F3F3;
+}
+body.dark .wave-container {
+  display: none;
+}
+body.dark header {
+  background: #283747;
+}
+body.dark header .navbar {
+  background-color: #283747;
+}
+body.dark header .navbar-item {
+  color: #a880e5;
+}
+body.dark header .navbar-item:hover,
+body.dark header .navbar-item :focus {
+  background-color: #a880e5;
+  color: #fff;
+  border-radius: 2px;
+}
+body.dark h1, body.dark h2, body.dark h3:not(.subtitle), body.dark h4 {
+  color: #a880e5 !important;
+}
+body.dark strong {
+  color: #fff;
+}
+body.dark section {
+  background-color: #1c2631 !important;
+}
+body.dark section#landing h3 {
+  color: #F3F3F3;
+}
+body.dark section#landing .jump-link a {
+  color: #a880e5;
+}
+body.dark section#portfolio .card,
+body.dark section#portfolio .card-header,
+body.dark section#portfolio .card-content {
+  background-color: #283747;
+}
+body.dark section#portfolio .card-content {
+  color: #F3F3F3;
+}
+body.dark section#portfolio .card-content .button.is-text {
+  color: #a880e5;
+}
+body.dark section#portfolio .card-content .button.is-text:active, body.dark section#portfolio .card-content .button.is-text:focus {
+  background-color: #a880e5;
+  color: #fff !important;
+}
+body.dark .modal-card-head {
+  background-color: #283747;
+}
+body.dark .modal-card-title {
+  color: #a880e5;
+}
+body.dark .modal-card-body {
+  background-color: #1c2631;
+}
+body.dark .content h4 {
+  color: #fff;
+}
+body.dark footer {
+  background: #283747;
 }
 
 /*# sourceMappingURL=styles.css.map */
